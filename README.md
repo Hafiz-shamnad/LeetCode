@@ -28,7 +28,7 @@ Each problem folder within these directories is named after the problem title an
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/leetcode-solutions.git
-   cd leetcode-solutions
+   cd leetcode
    ```
 
 2. Ensure you have Python installed. You can check your Python version with:
@@ -41,8 +41,8 @@ Each problem folder within these directories is named after the problem title an
 To run any solution, navigate to the respective problem folder and execute the Python script. For example:
 
 ```bash
-cd Easy/Two_Sum
-python solution.py
+cd Easy
+python filename.py
 ```
 
 ## Contributing
