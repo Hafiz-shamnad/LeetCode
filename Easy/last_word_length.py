@@ -33,14 +33,14 @@ s = "a"
 # for i in range(len(s)-1 , -1 , -1):
 #     if s[i] == ' ':
 #         if count > 0:
-#             break     
+#             break
 #     else:
 #         for letter in string.ascii_letters:
 #             if s[i] == letter:
 #                 print(letter, end=" ")
 #                 count += 1
 #                 break
-        
+
 
 # print(count)
 

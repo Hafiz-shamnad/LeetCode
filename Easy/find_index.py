@@ -19,10 +19,9 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 '''
 haystack = "leetcode"
 needle = "leeto"
-if not needle:  
+if not needle:
     print("-1")
     for i in range(len(haystack) - len(needle) + 1):
         if haystack[i:i+len(needle)] == needle:
             print(i)
 print("-1")
-

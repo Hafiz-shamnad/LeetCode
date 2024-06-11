@@ -32,14 +32,14 @@ Incrementing by one gives 9 + 1 = 10.
 Thus, the result should be [1,0].
 '''
 
-digits = [4,3,2,1]
+digits = [4, 3, 2, 1]
 digit = 0
 for i in range(len(digits)):
-    digit = digit*10+digits[i] #making to an integer based on base 10
-digit +=1 #incrementing the value by 1
+    digit = digit*10+digits[i]  # making to an integer based on base 10
+digit += 1  # incrementing the value by 1
 digits = []
-while digit>0:
-    temp = digit%10 #last element us poppped
+while digit > 0:
+    temp = digit % 10  # last element us poppped
     digits.append(temp)
     digit //= 10
-print( digits[::-1]) #reverse the string
+print(digits[::-1])  # reverse the string

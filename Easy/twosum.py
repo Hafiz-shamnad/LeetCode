@@ -30,11 +30,11 @@ Constraints:
 Only one valid answer exists.
 '''
 
-nums = [2,5,5,11]
+nums = [2, 5, 5, 11]
 target = 10
 res = []
 for i in range(len(nums)-1):
-    for j in range(i+1,len(nums)):
+    for j in range(i+1, len(nums)):
         if nums[i] + nums[j] == target:
             res.extend((i, j))
 print(res)

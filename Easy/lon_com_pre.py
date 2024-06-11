@@ -21,13 +21,14 @@ Output: ""
 Explanation: There is no common prefix among the input strings.
 '''
 
+
 def longestCommonPrefix(strs):
     if not strs:
         return ""
-    
+
     # Start with the first string as the prefix
     prefix = strs[0]
-    
+
     # Compare the prefix with each string in the array
     for s in strs[1:]:
         # Reduce the prefix until it matches the start of the string s
@@ -35,8 +36,9 @@ def longestCommonPrefix(strs):
             prefix = prefix[:-1]
             if not prefix:
                 return ""
-    
+
     return prefix
+
 
 # Example usage:
 print(longestCommonPrefix(["flower", "flow", "flight"]))  # Output: "fl"

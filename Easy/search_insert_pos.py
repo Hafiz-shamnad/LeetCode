@@ -21,7 +21,7 @@ Input: nums = [1,3,5,6], target = 7
 Output: 4
 '''
 
-nums = [1,3,5,6]
+nums = [1, 3, 5, 6]
 target = 0
 low = 0
 high = len(nums)-1
@@ -36,7 +36,7 @@ while low <= high:
         print(mid)
         break
 else:
-    if nums[mid]<target:
+    if nums[mid] < target:
         print(mid+1)
     else:
         print(mid)

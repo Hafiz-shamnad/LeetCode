@@ -22,6 +22,7 @@ Output: 2
 Explanation: The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.
 '''
 
+
 def find_largest_square(x):
     low, high = 0, x
     while low <= high:
@@ -34,12 +35,13 @@ def find_largest_square(x):
             high = mid - 1
     return high
 
+
 # Test the function with a large xber
 x = 529
-print("Largest integer whose square is less than or equal to", x, ":", find_largest_square(x))
+print("Largest integer whose square is less than or equal to",
+      x, ":", find_largest_square(x))
 
 # For larger values
-large_x = 2147395599 
-print("Largest integer whose square is less than or equal to", large_x, ":", find_largest_square(large_x))
-
-
+large_x = 2147395599
+print("Largest integer whose square is less than or equal to",
+      large_x, ":", find_largest_square(large_x))

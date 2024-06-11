@@ -23,7 +23,7 @@ Input: arr = [-3,0,1,-3,1,1,1,-3,10,0]
 Output: true
 '''
 
-arr = [1,2]
+arr = [1, 2]
 occ = []
 counted = set()
 flag = 0
@@ -38,7 +38,7 @@ for i in range(len(occ)):
         if i != j and occ[i] == occ[j]:
             flag = 1
 
-if(not flag):
+if (not flag):
     print("List contains all unique elements")
 else:
     print("List contains does not contains all unique elements")

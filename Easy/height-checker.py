@@ -39,11 +39,11 @@ expected: [1,2,3,4,5]
 All indices match.
 '''
 
-heights = [5,1,2,3,4]
+heights = [5, 1, 2, 3, 4]
 org_heights = heights[:]  # Create a copy of the original list
 count = 0
-heights = sorted(heights) 
+heights = sorted(heights)
 for i in range(len(heights)):
     if heights[i] != org_heights[i]:
-           count +=1
+        count += 1
 print(count)
