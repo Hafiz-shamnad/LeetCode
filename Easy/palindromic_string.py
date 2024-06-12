@@ -24,11 +24,11 @@ Output: ""
 Explanation: There are no palindromic strings, so the empty string is returned.
 '''
 
-words = ["notapalindrome","racecar"]
+words = ["notapalindrome", "racecar"]
 flag = 0
 for i in words:
-    str =""
-    for j in range(len(i)-1,-1,-1):
+    str = ""
+    for j in range(len(i)-1, -1, -1):
         str += i[j]
     if str == i:
         print(str)
@@ -36,4 +36,3 @@ for i in words:
         break
 if not flag:
     print(0)
-

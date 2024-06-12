@@ -21,9 +21,9 @@ Input: nums = [2,0,1]
 Output: [0,1,2]
 '''
 
-nums = [2,0,2,1,1,0]
-for i in range(0,len(nums)-1):
-    for j in range(0,len(nums)-i-1):
-        if nums[j]>nums[j+1]:
-           nums[j+1], nums[j] = nums[j] , nums[j+1]
+nums = [2, 0, 2, 1, 1, 0]
+for i in range(0, len(nums)-1):
+    for j in range(0, len(nums)-i-1):
+        if nums[j] > nums[j+1]:
+            nums[j+1], nums[j] = nums[j], nums[j+1]
 print(nums)
