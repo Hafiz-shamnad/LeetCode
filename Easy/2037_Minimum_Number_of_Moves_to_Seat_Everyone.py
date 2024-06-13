@@ -54,19 +54,19 @@ n == seats.length == students.length
 1 <= seats[i], students[j] <= 100
 '''
 
-seats = [4,1,5,9]
-students = [1,3,2,6]
+seats = [4, 1, 5, 9]
+students = [1, 3, 2, 6]
 moves = 0
 seats.sort()
 students.sort()
-i,j = 0,0
+i, j = 0, 0
 while i < len(students) and j < len(seats):
-    if students[i]>seats[j]:
+    if students[i] > seats[j]:
         moves += students[i]-seats[j]
     elif students[i] < seats[j]:
         moves += seats[i] - students[j]
     else:
         moves += 0
-    i+=1
-    j+=1
+    i += 1
+    j += 1
 print(moves)
