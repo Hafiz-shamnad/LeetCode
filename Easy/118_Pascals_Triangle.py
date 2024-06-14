@@ -21,9 +21,9 @@ Constraints:
 '''
 # input n
 numRows = 5
-arr=[]
+arr = []
 for i in range(1, numRows+1):
-    arr_ap =[]
+    arr_ap = []
     arr.append(arr_ap)
     for j in range(0, numRows-i+1):
         C = 1
@@ -31,6 +31,6 @@ for i in range(1, numRows+1):
         break
     for j in range(1, i+1):
         C = C * (i - j) // j
-        if C != 0 :
+        if C != 0:
             arr_ap.append(C)
 print(arr)
