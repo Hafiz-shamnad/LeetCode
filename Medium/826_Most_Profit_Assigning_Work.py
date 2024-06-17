@@ -35,6 +35,7 @@ m == worker.length
 1 <= difficulty[i], profit[i], worker[i] <= 105
 '''
 
+
 class Solution(object):
     def maxProfitAssignment(self, difficulty, profit, worker):
         """
@@ -45,14 +46,14 @@ class Solution(object):
         """
         # Pair difficulty and profit and sort by difficulty
         jobs = sorted(zip(difficulty, profit))
-        
+
         # Sort the workers by their ability
         worker.sort()
-        
+
         max_profit = 0
         best_profit = 0
         job_index = 0
-        
+
         # Iterate through each worker
         for w in worker:
             # Update the best profit the current worker can achieve
@@ -60,8 +61,9 @@ class Solution(object):
                 best_profit = max(best_profit, jobs[job_index][1])
                 job_index += 1
             max_profit += best_profit
-        
+
         return max_profit
+
 
 # Example usage
 solution = Solution()
